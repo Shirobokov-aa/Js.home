@@ -107,3 +107,30 @@
 // for (let i = 0; i < 10; i++){
 //     console.log(i)
 // }
+
+
+
+
+
+
+
+
+
+
+// _______________________________________________
+
+// jQury
+
+
+
+
+// _________________________________________________
+
+document.querySelector(".block");
+$(".block").click(function(){
+        // $(".block").addClass("newClass")
+        // $(".block").removeClass("newClass")
+        $(this).toggleClass("newClass")
+        // $(this).toggleClass("newClass")
+})
+

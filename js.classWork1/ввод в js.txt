@@ -120,3 +120,49 @@ while(uls < 10){
 for (let i = 0; i < 10; i++){
     console.log(i)
 }
+
+
+
+
+
+
+
+________________________________________________
+
+
+подключение jQury через cdn 
+https://releases.jquery.com/
+
+
+
+
+document.querySelector(".block");
+$(".block")
+
+одно и тоже, только с помощью джекюри
+
+
+
+
+когда при клике добовляем класс и удаляем
+
+$(".block").click(function(){
+        // $(".block").addClass("newClass")
+        // $(".block").removeClass("newClass")
+        $(".block").toggleClass("newClass")
+})
+
+
+________________________________________________
+
+
+
+document.querySelector(".block");
+$(".block").click(function(){
+        // $(".block").addClass("newClass")
+        // $(".block").removeClass("newClass")
+        $(this).toggleClass("newClass")                             Обращаемся через THIS к конкретному элементу
+        // $(this).toggleClass("newClass")
+})
+
+

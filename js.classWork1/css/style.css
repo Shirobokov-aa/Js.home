@@ -1,0 +1,10 @@
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: .4s;
+}
+
+.newClass{
+    background-color: brown;
+}
