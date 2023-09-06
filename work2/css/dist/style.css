@@ -1,0 +1,48 @@
+.allParent div {
+  height: 500px;
+  width: 500px;
+}
+.allParent .child1 {
+  height: 400px;
+  width: 400px;
+  background-color: purple;
+}
+.allParent .child11 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(184, 142, 184);
+}
+.allParent .child2 {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(15, 25, 161);
+}
+.allParent .child22 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(107, 115, 238);
+}
+.allParent .child3 {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(25, 173, 154);
+}
+.allParent .child33 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(11, 85, 95);
+}
+.allParent .child4 {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(161, 110, 15);
+}
+.allParent .child44 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(218, 233, 133);
+}
+
+div.isActive {
+  background-color: darkblue !important;
+}
