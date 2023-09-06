@@ -126,11 +126,87 @@
 
 // _________________________________________________
 
-document.querySelector(".block");
-$(".block").click(function(){
-        // $(".block").addClass("newClass")
-        // $(".block").removeClass("newClass")
-        $(this).toggleClass("newClass")
-        // $(this).toggleClass("newClass")
-})
+// document.querySelector(".block");
+// $(".block").click(function(){
+//         // $(".block").addClass("newClass")
+//         // $(".block").removeClass("newClass")
+//         $(this).toggleClass("newClass")
+//         // $(this).toggleClass("newClass")
+// })
+
+
+
+// if(() /* && и || */ ()){
+//         console.log("")
+// }
+
+// if(condition){
+//         // 
+// }else{
+//         //
+// }
+
+
+// switch (key) {
+//         case value:
+                
+//                 break;
+
+//         default:
+//                 break;
+// }
+
+// switch(key){
+//         case "понедельник":
+//                 //Делаем завтрак
+//                 break;
+//         case "вторник":
+//                 //зал
+//                 break;
+//         // ........
+//         default:
+//                 //Лежать на диване
+//                 break;
+// }
+
+
+
+
+
+//    Циклы             __________________________
+
+
+
+// let i = 0
+
+// while(i < 10){
+//         console.log(i)
+//         i++;
+// }
+
+// for(var j = 0; j < 10; j++){
+//         console.log(j)
+// }
+
+
+// let num = "5"
+
+// console.log(typeof + num)
+
+
+
+
+let value = +prompt("Укажите число", "")  
+
+function factorial(n){
+        if (n === 1){
+                return n
+        }
+        return n*factorial(n - 1)
+}
+
+factorial (value)
+
+alert (factorial(value))
+
 
