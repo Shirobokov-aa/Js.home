@@ -1,0 +1,231 @@
+
+
+        // ПЕРЕМЕННЫЕ
+// присвоение переменных задается 3 способами
+
+var name = 0;
+let name2 = 0;
+const constName = 0;
+
+язык является регистрозависимым
+
+let name;
+let Name;
+let NAME;
+
+это три разных переменных
+
+пишем стилем камолкейс 
+constName
+firstSecondThird
+в одно слово, каждое слово с заглавной буквы
+
+
+
+_________________________________________________
+
+
+
+                    Типы данных
+
+let num = 0;  
+let string = "Это строка";
+let bulean = true/false
+// NaN 
+// null
+// undefined
+// Infinity
+// -Infinity
+
+// тип данных который может содержать любые данные
+// Object
+
+// let x = 20;
+
+// console.log ('test');
+// console.log(x);
+
+// console.log (document);
+// console.log(window);
+
+// операторы
+
+// + 
+// -
+// *
+// /
+// ++  // +1
+// --  // -1
+// **  //возведение в степень
+// %   //остаток от деления
+
+
+_________________________________________________
+
+
+<body>
+    <div class="block">
+        
+    </div>
+</body>
+                
+
+const block = document.querySelector(".block");             //document пишем всегда,это наш весь документ
+console.log(block)                                          // проверили, возвращается ли строчка в конслось
+const insideBlock = block.querySelector(".insideblock");    // обращаемся в блоке block к элементу insideblock
+
+________________________________________________
+
+                Условия
+
+    ключевая синтаксис условия
+if () {
+
+}
+
+___________________________
+if (x > y) {
+
+}
+
+(x > y)
+(x < y)
+(x >= y)
+(x >= y)
+(x == y)
+(x === y)
+
+
+
+ 
+
+        if (если)       else (иначе)        
+
+if (2 > 1){
+    alert('верно')
+} else {
+    alert('не верно')
+}
+
+
+let uls = 0;
+while(uls < 10){
+    console.log(uls)
+
+    uls++;
+}
+
+
+
+for (let i = 0; i < 10; i++){
+    console.log(i)
+}
+
+
+
+
+
+
+
+________________________________________________
+
+
+подключение jQury через cdn 
+https://releases.jquery.com/
+
+
+
+
+document.querySelector(".block");
+$(".block")
+
+одно и тоже, только с помощью джекюри
+
+
+
+
+когда при клике добовляем класс и удаляем
+
+$(".block").click(function(){
+        // $(".block").addClass("newClass")
+        // $(".block").removeClass("newClass")
+        $(".block").toggleClass("newClass")
+})
+
+
+________________________________________________
+
+
+
+document.querySelector(".block");
+$(".block").click(function(){
+        // $(".block").addClass("newClass")
+        // $(".block").removeClass("newClass")
+        $(this).toggleClass("newClass")                             Обращаемся через THIS к конкретному элементу
+        // $(this).toggleClass("newClass")
+})
+
+
+
+
+
+document.querySelector(".block");
+$(".block").click(function(){
+        // $(".block").addClass("newClass")
+        // $(".block").removeClass("newClass")
+        $(this).toggleClass("newClass")
+        // $(this).toggleClass("newClass")
+})
+
+
+
+if(() /* && и || */ ()){
+        console.log("")
+}
+
+if(condition){
+        // 
+}else{
+        //
+}
+
+
+switch (key) {
+        case value:
+                
+                break;
+
+        default:
+                break;
+}
+
+switch(key){
+        case "понедельник":
+                //Делаем завтрак
+                break;
+        case "вторник":
+                //зал
+                break;
+        // ........
+        default:
+                //Лежать на диване
+                break;
+}
+
+
+
+
+
+                                            ФАКТОРИАЛ
+
+let value = +prompt("Укажите число", "")                    запрос у пользователя + числовой 
+
+function factorial(n){                                      высчитывает факториал
+        if (n === 1){                                       если равно 1 то вернет 1
+                return n                                    возвразщает n
+        }
+        return n*factorial(n - 1)                           
+}
+
+
+alert (factorial(value))
