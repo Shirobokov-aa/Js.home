@@ -117,17 +117,20 @@
 // console.log(string.join())
 
 
-let array = [5,123,513,634,236,7563,6432,12345]
+// let array = [5,123,513,634,236,7563,6432,12345]
 
-function alertArray(arr){
-  let sum = 0
-  for (let index = 0; index < arr.length; index++) {
-    // console.log(arr[index])
-    if(index % 2 ==0){
-      console.log(arr[index])
-      sum += arr[index]
-    }
-  }
-  console.log(`Сумма масива равна ${sum}`)
-}
-alertArray(array)
+// function alertArray(arr){
+//   let sum = 0
+//   for (let index = 0; index < arr.length; index++) {
+//     // console.log(arr[index])
+//     if(index % 2 ==0){
+//       console.log(arr[index])
+//       sum += arr[index]
+//     }
+//   }
+//   console.log(`Сумма масива равна ${sum}`)
+// }
+// alertArray(array)
+
+
+// ______________________
