@@ -1,0 +1,21 @@
+
+.tabs__body{
+    // display: none;
+    &--open{
+        display: block;
+    }
+}
+
+.tabs__caption{
+    &--active{
+        color: red;
+    }
+}
+
+.tabs__item{
+    display: none;
+
+    &--active{
+        display: block;
+    }
+}

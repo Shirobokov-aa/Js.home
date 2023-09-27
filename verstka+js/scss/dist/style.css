@@ -1,0 +1,14 @@
+.tabs__body--open {
+  display: block;
+}
+
+.tabs__caption--active {
+  color: red;
+}
+
+.tabs__item {
+  display: none;
+}
+.tabs__item--active {
+  display: block;
+}
