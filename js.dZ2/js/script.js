@@ -50,6 +50,31 @@
 
 // Задание 3
 
-let x = prompt("Введите трех значное число")
+// let x = prompt("Введите трехзначное число:");
 
-if (x > )
+// let digit1 = parseInt(x.charAt(0));
+// let digit2 = parseInt(x.charAt(1));
+// let digit3 = parseInt(x.charAt(2));
+
+
+// if (digit1 === digit2 || digit1 === digit3 || digit2 === digit3) {
+//     alert("В числе есть одинаковые цифры.");
+// } else {
+//     alert("В числе нет одинаковых цифр.");
+// }
+
+// Задание 4
+
+// let yearInput = prompt("Введите год:");
+
+// let year = parseInt(yearInput);
+
+// if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+//   alert(`${year} год является високосным.`);
+// } else {
+//   alert(`${year} год не является високосным.`);
+// }
+
+
+// Задание 5
+
