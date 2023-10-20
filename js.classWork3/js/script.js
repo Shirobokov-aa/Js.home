@@ -143,8 +143,8 @@
 // }
 
 
-let x = +prompt("number")
-for (let index = 0; index >= x; index++) {
-    console.log(x)
+// let x = +prompt("number")
+// for (let index = 0; index >= x; index++) {
+//     console.log(x)
     
-}
+// }
