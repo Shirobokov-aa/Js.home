@@ -1,110 +1,84 @@
-// Для решения этих задач можно выбрать различные типы циклов в зависимости от конкретных требований:
+// // Функция, которая сравнивает два числа:
 
-// Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+// // function compareNumbers(num1, num2) {
+// //     if (num1 < num2) {
+// //       return -1;
+// //     } else if (num1 > num2) {
+// //       return 1;
+// //     } else {
+// //       return 0;
+// //     }
+// // }
+  
+// // const result = compareNumbers(5, 8);
+// // console.log(result); // Выведет -1
 
-// В этой задаче лучше всего использовать цикл for, так как вы заранее знаете диапазон, в котором нужно подсчитать сумму. Например:
+  
+// // Функция для вычисления факториала:
 
-// const start = parseInt(prompt('Введите начало диапазона:'));
-// const end = parseInt(prompt('Введите конец диапазона:'));
-// let sum = 0;
+// // function factorial(n) {
+// //     if (n === 0 || n === 1) {
+// //       return 1;
+// //     } else {
+// //       return n * factorial(n - 1);
+// //     }
+// //   }
+  
+// //   const result = factorial(5);
+// //   console.log(result); // Выведет 120
+  
 
-// for (let i = start; i <= end; i++) {
-//   sum += i;
-// }
-
-// alert(`Сумма всех чисел в диапазоне от ${start} до ${end}: ${sum}`);
+// //   Функция, которая объединяет три цифры в одно число:
 
 
-// Запросить 2 числа и найти только наибольший общий делитель.
+// //   function combineDigits(digit1, digit2, digit3) {
+// //     return parseInt(`${digit1}${digit2}${digit3}`, 10);
+// //   }
+  
+// //   const result = combineDigits(1, 4, 9);
+// //   console.log(result); // Выведет 149
+  
 
-// В этой задаче также лучше использовать цикл for. Вы можете воспользоваться алгоритмом поиска наибольшего общего делителя (НОД), таким как алгоритм Евклида:
+// задача 4
 
-
-// const num1 = parseInt(prompt('Введите первое число:'));
-// const num2 = parseInt(prompt('Введите второе число:'));
-
-// function findGCD(a, b) {
-//   while (b !== 0) {
-//     const temp = b;
-//     b = a % b;
-//     a = temp;
+// function calculateRectangleArea(length, width) {
+//     if (width === undefined) {
+//       // Если передан только один параметр, то считаем площадь квадрата
+//       return length * length;
+//     } else {
+//       // Иначе считаем площадь прямоугольника
+//       return length * width;
+//     }
 //   }
-//   return a;
-// }
+  
+//   const squareArea = calculateRectangleArea(5);
+//   console.log(squareArea); // Выведет 25 (площадь квадрата)
+  
+//   const rectangleArea = calculateRectangleArea(4, 6);
+//   console.log(rectangleArea); // Выведет 24 (площадь прямоугольника)
 
-// const gcd = findGCD(num1, num2);
-// alert(`Наибольший общий делитель чисел ${num1} и ${num2}: ${gcd}`);
+  
 
+//   задача 5 
 
-// Запросить у пользователя число и вывести все делители этого числа.
-
-// Здесь также подойдет цикл for, так как вы заранее не знаете, сколько делителей у числа:
-
-// const number = parseInt(prompt('Введите число:'));
-// const divisors = [];
-
-// for (let i = 1; i <= number; i++) {
-//   if (number % i === 0) {
-//     divisors.push(i);
+//   function isPerfectNumber(number) {
+//     if (number <= 0) {
+//       return false; // Совершенные числа должны быть положительными
+//     }
+  
+//     let sum = 0;
+//     for (let i = 1; i < number; i++) {
+//       if (number % i === 0) {
+//         sum += i;
+//       }
+//     }
+  
+//     return sum === number;
 //   }
-// }
-
-// alert(`Делители числа ${number}: ${divisors.join(', ')}`);
-
-
-// Определить количество цифр в введенном числе.
-
-// В этой задаче можно использовать цикл while, так как вы можете продолжать проверку до тех пор, пока число не станет равным нулю:
-
-// const number = parseInt(prompt('Введите число:'));
-// let count = 0;
-// let tempNumber = Math.abs(number);
-
-// if (tempNumber === 0) {
-//   count = 1; // Если число равно нулю, то у него 1 цифра.
-// } else {
-//   while (tempNumber > 0) {
-//     tempNumber = Math.floor(tempNumber / 10);
-//     count++;
-//   }
-// }
-
-// alert(`Количество цифр в числе ${number}: ${count}`);
-
-// Проверка, является ли пятизначное число палиндромом:
-
-
-// const number = prompt('Введите пятизначное число:');
-// const numString = number.toString();
-
-// if (numString.length !== 5) {
-//   alert('Вы ввели не пятизначное число.');
-// } else {
-//   const reversedNumString = numString.split('').reverse().join('');
-//   if (numString === reversedNumString) {
-//     alert('Введенное число является палиндромом.');
-//   } else {
-//     alert('Введенное число не является палиндромом.');
-//   }
-// }
-
-
-// Конвертер валют:
-
-
-// const usdAmount = parseFloat(prompt('Введите сумму в долларах (USD):'));
-// const selectedCurrency = prompt('Выберите валюту для конвертации: EUR, UAN или AZN').toUpperCase();
-
-// let convertedAmount;
-// const exchangeRates = {
-//   EUR: 0.85,  // Курс доллара к евро
-//   UAN: 27.7,  // Курс доллара к украинской гривне
-//   AZN: 1.7    // Курс доллара к азербайджанскому манату
-// };
-
-// if (exchangeRates[selectedCurrency]) {
-//   convertedAmount = usdAmount * exchangeRates[selectedCurrency];
-//   alert(`Сумма в ${selectedCurrency}: ${convertedAmount.toFixed(2)}`);
-// } else {
-//   alert('Выбрана неподдерживаемая валюта. Пожалуйста, выберите EUR, UAN или AZN.');
-// }
+  
+//   const result1 = isPerfectNumber(28);
+//   console.log(result1); // Выведет true, так как 28 - совершенное число
+  
+//   const result2 = isPerfectNumber(12);
+//   console.log(result2); // Выведет false, так как 12 - не совершенное число
+  
