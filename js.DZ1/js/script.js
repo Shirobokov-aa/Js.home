@@ -106,4 +106,27 @@
 
 //Часть 8
 
+// // Количество шоколадок и сдача:
 
+// const walletAmount = prompt('Введите сумму денег в кошельке:');
+// const chocolatePrice = prompt('Введите цену одной шоколадки:');
+// const chocolatesBought = Math.floor(walletAmount / chocolatePrice);
+// const change = walletAmount % chocolatePrice;
+// alert(`Вы можете купить ${chocolatesBought} шоколадок, и у вас останется ${change} сдачи.`);
+
+
+
+//  Часть 9
+//  Переворот трехзначного числа:
+
+// const number = prompt('Введите трехзначное число:');
+// const reversedNumber = (number % 10) * 100 + Math.floor((number % 100) / 10) * 10 + Math.floor(number / 100);
+// alert(`Число задом наперед: ${reversedNumber}`);
+
+
+// Часть 10 Проверка четности числа:
+
+
+// const userNumber = prompt('Введите целое число:');
+// const isEven = userNumber % 2 === 0;
+// alert(`Число ${userNumber} ${isEven ? 'четное' : 'нечетное'}.`);
