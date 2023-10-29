@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Футбольное поле</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #field {
+            width: 100%;
+            height: 100vh;
+            background-color: green;
+            position: relative;
+        }
+
+        #ball {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="field">
+        <div id="ball"></div>
+    </div>
+
+    <script>
+        const field = document.getElementById("field");
+        const ball = document.getElementById("ball");
+
+        field.addEventListener("click", (event) => {
+            const clickX = event.clientX;
+            const clickY = event.clientY;
+
+            const fieldRect = field.getBoundingClientRect();
+            const fieldX = fieldRect.left;
+            const fieldY = fieldRect.top;
+            const fieldWidth = fieldRect.width;
+            const fieldHeight = fieldRect.height;
+
+            const ballSize = 100;
+            const ballX = clickX - fieldX - ballSize / 2;
+            const ballY = clickY - fieldY - ballSize / 2;
+
+            // Проверка, чтобы мяч не выходил за границы поля
+            if (ballX < 0) ballX = 0;
+            if (ballY < 0) ballY = 0;
+            if (ballX + ballSize > fieldWidth) ballX = fieldWidth - ballSize;
+            if (ballY + ballSize > fieldHeight) ballY = fieldHeight - ballSize;
+
+            ball.style.transform = `translate(${ballX}px, ${ballY}px)`;
+        });
+    </script>
+</body>
+</html>

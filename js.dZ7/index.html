@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ввод имени без цифр</title>
+</head>
+<body>
+    <h1>Введите ваше имя без цифр:</h1>
+    <input type="text" id="nameInput">
+
+    <script>
+        const nameInput = document.getElementById("nameInput");
+
+        nameInput.addEventListener("input", function () {
+            // Получаем текущее значение поля ввода
+            let inputValue = nameInput.value;
+
+            // Удаляем все цифры из текущего значения
+            let sanitizedValue = inputValue.replace(/\d/g, '');
+
+            // Обновляем значение поля ввода без цифр
+            nameInput.value = sanitizedValue;
+        });
+    </script>
+</body>
+</html>
